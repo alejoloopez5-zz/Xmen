@@ -24,40 +24,40 @@ java -jar app.jar y posterior en un navegador realizar las peticiones.
 	aun asi dejo en la documentacion la informacion de dichos endpoints en dichas plataformas y la info en local que esta apuntando al bd en GCP.
 
 * Heroku
-	https://mutantmanuel.herokuapp.com/actuator/health (GET)  >> Endpoint para validar si la app esta arriba conectada con la bd
-	https://mutantmanuel.herokuapp.com/mutant/stats    (GET)  >> Endpoint que devuelve el promedio de mutantes y conteo de mutantes y humanos
-	https://mutantmanuel.herokuapp.com/mutant 		   (POST) >> Endpoint para enviar la cadena de adn y esperar un 200 si es mutante o 403 si es humano
+	*https://mutantmanuel.herokuapp.com/actuator/health (GET)  >> Endpoint para validar si la app esta arriba conectada con la bd
+	*https://mutantmanuel.herokuapp.com/mutant/stats    (GET)  >> Endpoint que devuelve el promedio de mutantes y conteo de mutantes y humanos
+	*https://mutantmanuel.herokuapp.com/mutant 		   (POST) >> Endpoint para enviar la cadena de adn y esperar un 200 si es mutante o 403 si es humano
 	
 	ejemplo del body
 	{       
     "dna": ["ATGCGA", "CAGTGC", "TTATGT","AGAAGG", "CCCCTA", "TCACTZ"]    
 	}
 	
-	https://mutantmanuel.herokuapp.com/swagger-ui.html (GET)  >> Endpoint que se debe ejecutar desde el navgador para visualizar la documentacion de las metodos expuestos en la api
+	*https://mutantmanuel.herokuapp.com/swagger-ui.html (GET)  >> Endpoint que se debe ejecutar desde el navgador para visualizar la documentacion de las metodos expuestos en la api
 	
 * GCP
-	https://xmengcp.uc.r.appspot.com/actuator/health (GET)  >> Endpoint para validar si la app esta arriba conectada con la bd
-	https://xmengcp.uc.r.appspot.com/mutant/stats    (GET)  >> Endpoint que devuelve el promedio de mutantes y conteo de mutantes y humanos
-	https://xmengcp.uc.r.appspot.com/mutant 		   (POST) >> Endpoint para enviar la cadena de adn y esperar un 200 si es mutante o 403 si es humano
+	*https://xmengcp.uc.r.appspot.com/actuator/health (GET)  >> Endpoint para validar si la app esta arriba conectada con la bd
+	*https://xmengcp.uc.r.appspot.com/mutant/stats    (GET)  >> Endpoint que devuelve el promedio de mutantes y conteo de mutantes y humanos
+	*https://xmengcp.uc.r.appspot.com/mutant 		   (POST) >> Endpoint para enviar la cadena de adn y esperar un 200 si es mutante o 403 si es humano
 	
 	ejemplo del body
 	{       
     "dna": ["ATGCGA", "CAGTGC", "TTATGT","AGAAGG", "CCCCTA", "TCACTZ"]    
 	}
 	
-	https://xmengcp.uc.r.appspot.com/swagger-ui.html (GET)  >> Endpoint que se debe ejecutar desde el navgador para visualizar la documentacion de las metodos expuestos en la api
+	*https://xmengcp.uc.r.appspot.com/swagger-ui.html (GET)  >> Endpoint que se debe ejecutar desde el navgador para visualizar la documentacion de las metodos expuestos en la api
 
 * Local
-	http://localhost:8081/actuator/health (GET)  >> Endpoint para validar si la app esta arriba conectada con la bd
-	http://localhost:8081/mutant/stats    (GET)  >> Endpoint que devuelve el promedio de mutantes y conteo de mutantes y humanos
-	http://localhost:8081/mutant 		   (POST) >> Endpoint para enviar la cadena de adn y esperar un 200 si es mutante o 403 si es humano
+	*http://localhost:8081/actuator/health (GET)  >> Endpoint para validar si la app esta arriba conectada con la bd
+	*http://localhost:8081/mutant/stats    (GET)  >> Endpoint que devuelve el promedio de mutantes y conteo de mutantes y humanos
+	*http://localhost:8081/mutant 		   (POST) >> Endpoint para enviar la cadena de adn y esperar un 200 si es mutante o 403 si es humano
 	
 	ejemplo del body
 	{       
     "dna": ["ATGCGA", "CAGTGC", "TTATGT","AGAAGG", "CCCCTA", "TCACTZ"]    
 	}
 	
-	http://localhost:8081/swagger-ui.html (GET)  >> Endpoint que se debe ejecutar desde el navgador para visualizar la documentacion de las metodos expuestos en la api
+	*http://localhost:8081/swagger-ui.html (GET)  >> Endpoint que se debe ejecutar desde el navgador para visualizar la documentacion de las metodos expuestos en la api
 
 
 ## Despliegue 📦
