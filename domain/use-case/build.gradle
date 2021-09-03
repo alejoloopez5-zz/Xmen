@@ -1,0 +1,6 @@
+dependencies {
+
+    compile project(":domain-model")
+    compile group: 'org.modelmapper', name: 'modelmapper', version: '2.3.2'
+    compile 'org.springframework:spring-web:3.0.2.RELEASE'
+}
