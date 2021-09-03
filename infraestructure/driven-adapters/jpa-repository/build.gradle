@@ -1,0 +1,12 @@
+
+dependencies {
+
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.reactivecommons.utils:object-mapper:0.1.0'
+    implementation 'org.postgresql:postgresql:42.1.1'
+
+    compile project(':domain-model')
+    compile project(':helpers-jpa-repository-common')
+
+    compile group: 'javax.validation', name: 'validation-api', version: '2.0.1.Final'
+}

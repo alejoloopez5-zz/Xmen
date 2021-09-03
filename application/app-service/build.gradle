@@ -1,0 +1,21 @@
+apply plugin: 'org.springframework.boot'
+archivesBaseName = "app"
+
+dependencies {
+
+    implementation 'org.apache.tomcat:tomcat-jdbc:7.0.28'
+    implementation 'org.springframework.boot:spring-boot-devtools'
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.reactivecommons.utils:object-mapper:0.1.0'
+
+    compile project(":domain-use-case")
+    compile project(":entry-points-api-rest")
+    compile project(":driven-adapters-jpa-repository")
+
+
+    runtime('org.springframework.boot:spring-boot-devtools')
+
+
+    compile 'org.apache.commons:commons-dbcp2:2.2.0'
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.2'
+}
